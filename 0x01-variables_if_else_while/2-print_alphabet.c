@@ -1,19 +1,19 @@
-#include <stdio.h>
 #include <ctype.h>
-
+#include <string.h>
+#include <stdio.h>
 /**
-* main - print alphabet in lowercase
-* Use putchar onlu 2times
-* Return: 0
-*/
-
+ *main - Entrry point
+ *
+ *Return: Always 0
+ */
 int main(void)
 {
-int lower = a;
-while (lower <= z)
+char letters[27] = "abcdefghijklmnopqrstuvwxyz";
+size_t i = 0;
+while (i < strlen(letters))
 {
-putchar(lower);
-lower +=1;
+putchar(letters[i]);
+i = i + 1;
 }
 putchar(n);
 return (0);
