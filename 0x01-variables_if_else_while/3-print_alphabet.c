@@ -1,31 +1,17 @@
-#include <ctype.h>
-#include <string.h>
 #include <stdio.h>
 /**
- *main - Entrry point
- *
- *Return: Always 0
+ * main - Prints alphabets in lowercase then in uppercase
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char letters[27] = "abcdefghijklmnopqrstuvwxyz";
-size_t i = 0;
-int check = 0;
-while (check == 0)
-{
-while ((i < strlen(letters)) && (check == 0))
-{
-putchar(letters[i]);
-i = i + 1;
-}
-check = check + 1;
-i = (i / i) -1;
-while ((i < strlen(letters)) && (check == 1))
-{
-putchar(toupper(letters[i]));
-i = i + 1;
-}
-}
+int ch;
+
+for (ch = a; ch <= z; ch++)
+putchar(ch);
+for (ch = A; ch <= Z; ch++)
+putchar(ch);
 putchar(n);
 return (0);
 }
