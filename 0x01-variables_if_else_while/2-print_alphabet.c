@@ -1,20 +1,18 @@
-#include <ctype.h>
-#include <string.h>
 #include <stdio.h>
+
 /**
- *main - Entrry point
+ * main - Entry point
  *
- *Return: Always 0
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-char letters[27] = "abcdefghijklmnopqrstuvwxyz";
-size_t i = 0;
-while (i < strlen(letters))
-{
-putchar(letters[i]);
-i = i + 1;
-}
+char c;
+
+for (c = a; c <= z; c++)
+putchar(c);
 putchar(n);
+
 return (0);
 }
